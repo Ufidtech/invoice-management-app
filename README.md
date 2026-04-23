@@ -493,4 +493,4 @@ Found a bug or have questions?
 
 ---
 
-**Built with ❤️ by Frontend Wizards - Stage 2**
+**Built with ❤️ by Frontend Wizard - Ibrahim Danjuma**
