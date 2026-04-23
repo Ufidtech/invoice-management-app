@@ -102,6 +102,30 @@ body,
   transform: scale(0.95);
 }
 
+.avatar-block {
+  margin-top: 16px;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(124, 93, 250, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar svg {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
 .content-area {
   width: min(860px, 92%);
   margin: 0 auto;
@@ -255,6 +279,41 @@ body,
   box-shadow: var(--shadow);
   padding: 40px 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.empty-illustration {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 24px;
+  opacity: 0.9;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.empty-state h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 16px 0 8px;
+  color: var(--text);
+}
+
+.empty-state p {
+  color: #7e88c3;
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 /* Invoice list row */
